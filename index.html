@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Brust</title>
+    <!-- tailwind and daisy ui  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/b1371e78c7.js" crossorigin="anonymous"></script>
+    <!-- tailwind custom color  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="font-lato">
+    <header>
+        <nav>
+            <div class="navbar h-28  bg-[#F85559] rounded-full mt-6 px-10 text-white">
+                <div class="flex gap-10">
+                    <a class="  normal-case text-xl">Home</a>
+                    <a class="  normal-case text-xl">About Us</a>
+                    <a class="  normal-case text-xl">Shop</a>
+                    <a class="  normal-case text-xl">All Fruits</a>
+                </div>
+                <div class="px-96 gap-3 ">
+
+                    <img class="w-14 " src="images/logo.png" alt="">
+
+                    <div class=" text-2xl font-bold">
+                        <h2 class=" ">Fruit Burst</h2>
+                    </div>
+                </div>
+                <div class="flex-none gap-2">
+                    <div class="bg-white pl-5   pb-14  h-14 w-80 text-black flex rounded-full    gap-44">
+                        <div class="  text-[#727272] py-5">Search here</div>
+                        <i class=" py-5 place-items-end fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <!-- <div class="form-control">
+                        <input type="text" placeholder="Search here"
+                            class="input input-bordered md:w-auto rounded-3xl lg:w-72 mx-6" />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div> -->
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- deal of the day  -->
+        <section class="flex  justify-between ml-40 mt-20 mr-28 mb-20">
+            <div class=" ">
+                <h2 class="font-black text-5xl mb-2">Deal of the day</h2>
+                <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+                    Latin
+                    literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <!-- timer  -->
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                <div class="flex flex-col">
+                    <span class="countdown font-mono text-5xl">
+                        <span style="--value:29;">
+
+                        </span>
+                    </span>
+
+                    days
+                </div>
+                <div class="flex flex-col">
+                    <span class="countdown font-mono text-5xl">
+                        <span style="--value:15;"></span>
+                    </span>
+                    hours
+                </div>
+                <div class="flex flex-col">
+                    <span class="countdown font-mono text-5xl">
+                        <span style="--value:25;"></span>
+                    </span>
+                    min
+                </div>
+                <div class="flex flex-col">
+                    <span class="countdown font-mono text-5xl">
+                        <span style="--value:08;"></span>
+                    </span>
+                    sec
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Why Choose Us -->
+        <section class="mt-10 mb-8  ">
+            <div>
+                <div>
+                    <h2 class="text-center font-bold text-5xl ">Why Choose Us</h2>
+                    <p class="text-center text-base mt-6">Contrary to popular belief, is not simply random text. It has
+                        roots
+                        in a
+                        piece of classical <br> Latin
+                        literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+            </div>
+            <div class="flex  ml-96 mt-16 mb-20 gap-10">
+                <!--  -->
+                <div>
+                    <!-- dedicated part  -->
+                    <div class="gap-10  ">
+                        <div class="flex gap-4 ml-10 mb-6">
+                            <!-- icon -->
+                            <div>
+                                <i class="fa-solid fa-users     opacity-40 p-4 bg-slate-400 rounded-3xl"></i>
+
+                            </div>
+                            <div>
+                                <h4 class=" underline underline-offset-4 text-2xl  font-black">Dedicated Team</h4>
+
+                                <p>Professional employees are there for you to pick <br> the most amazing and fresh
+                                    fruits.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- dedicated part  -->
+                    <div>
+                        <div class="flex gap-4 ml-10 mb-6">
+                            <!-- icon -->
+                            <div>
+                                <i class="fa-solid fa-heart   opacity-40 p-4 bg-slate-400 rounded-3xl"></i>
+
+                            </div>
+                            <div>
+                                <h4 class=" underline underline-offset-4 text-2xl  font-black">Fresh is Best</h4>
+
+                                <p>Professional employees are there for you to pick <br> the most amazing and fresh
+                                    fruits.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- dedicated part  -->
+                    <div>
+                        <div class="flex gap-4 ml-10 mb-6">
+                            <!-- icon -->
+                            <div>
+                                <i class="fa-solid fa-gifts    opacity-40 p-4 bg-slate-400 rounded-3xl"></i>
+
+
+                            </div>
+                            <div>
+                                <h4 class=" underline underline-offset-8 text-2xl  font-black">Gift Certificates</h4>
+
+                                <p>Professional employees are there for you to pick <br> the most amazing and fresh
+                                    fruits.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div>
+                    <img class="pl-8" src="images/whychoose1.png" alt="">
+                </div>
+                <!-- second dedicated  -->
+                <div>
+                    <div>
+
+                        <div>
+                            <div class="flex gap-4 ml-10 mb-6">
+                                <!-- icon -->
+                                <div>
+                                    <i class="fa-solid fa-users     opacity-40 p-4 bg-slate-400 rounded-3xl"></i>
+
+                                </div>
+                                <div>
+                                    <h4 class=" underline underline-offset-4 text-2xl  font-black">Integrated Supplier
+                                    </h4>
+
+                                    <p>Professional employees are there for you to pick <br> the most amazing and fresh
+                                        fruits.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex gap-4 ml-10 mb-6">
+                                <!-- icon -->
+                                <div>
+                                    <i class="fa-solid fa-users     opacity-40 p-4 bg-slate-400 rounded-3xl"></i>
+
+                                </div>
+                                <div>
+                                    <h4 class=" underline underline-offset-4 text-2xl  font-black">Sustainable Practice
+                                    </h4>
+
+                                    <p>Professional employees are there for you to pick <br> the most amazing and fresh
+                                        fruits.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex gap-4 ml-10 mb-6">
+                                <!-- icon -->
+                                <div>
+                                    <i class="fa-solid fa-users     opacity-40 p-4 bg-slate-400 rounded-3xl"></i>
+
+                                </div>
+                                <div>
+                                    <h4 class=" underline underline-offset-4 text-2xl  font-black">The Benefits Only
+                                    </h4>
+
+                                    <p>Professional employees are there for you to pick <br> the most amazing and fresh
+                                        fruits.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer footer-center p-10 bg-[#fb8c8e]  text-base-content rounded">
+        <div>
+            <div class="px-96 gap-3 flex   ">
+
+                <img class="w-14 mt-14" src="images/logo.png" alt="">
+
+                <div class=" mt-20 text-2xl font-bold">
+                    <h2>Fruit Burst</h2>
+                </div>
+            </div>
+        </div>
+
+        <nav class="grid grid-flow-col gap-4 text-white">
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Shop</a>
+            <a class="link link-hover">All Fruits</a>
+
+            <a class="link link-hover">Support</a>
+            <a class="link link-hover">My Account</a>
+        </nav>
+        <nav>
+            <div class="grid grid-flow-col gap-4  ">
+                <a> <i class="fa-brands   fa-apple fa-2x"></i></a>
+                <a> <i class="fa-brands fa-linkedin fa-2x"></i></a>
+                <a> <i class="fa-brands fa-square-instagram fa-2x"></i></a>
+                <a> <i class="fa-brands fa-youtube fa-2x"></i></a>
+                <a>
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                </a>
+                <a><i class="fa-brands fa-twitter fa-2x"></i></a>
+
+            </div>
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
